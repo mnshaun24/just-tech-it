@@ -9,7 +9,21 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <header>
+    <h1>Home</h1>
+    <h1>Dashboard</h1>
+    <h1>
+      {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+    </h1>
+  </header>
+
+
+  {{!-- <div class="wrapper">
     <header>
       <h1>
         <a href="/">Just Tech It Blog</a>
@@ -29,7 +43,7 @@
     <footer>
       Thanks for visiting!
     </footer>
-  </div>
+  </div> --}}
 
 </body>
 
