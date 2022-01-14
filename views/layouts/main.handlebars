@@ -10,41 +10,30 @@
 
 <body>
   <header>
-    <h1>Home</h1>
-    <h1>Dashboard</h1>
-    <h1>
-      {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+    <h1>Just Tech It Blog</h1>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+        {{#else}}
+        <a href="/login">Dashboard</a>
+      </li>
+      <li>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
-    </h1>
+      </li>
+    </ul>
   </header>
 
-
-  {{!-- <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Just Tech It Blog</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div> --}}
-
+  <main>
+    {{{ body }}}
+  </main>
 </body>
 
 </html>
