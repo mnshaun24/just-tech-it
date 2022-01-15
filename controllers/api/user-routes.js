@@ -100,11 +100,15 @@ router.post('/login', (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
+  console.log("You hit /logout")
   if (req.session.loggedIn) {
+    console.log("You hit the if statement")
     req.session.destroy(() => {
+      console.log("you have destroyed your session")
       res.status(204).end();
     });
   } else {
+    console.log("you hit an error")
     res.status(404).end();
   }
 });
