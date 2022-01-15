@@ -17,11 +17,11 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_url: {
+    post_text: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        isURL: true
+          len: [5]
       }
     },
     user_id: {
@@ -30,7 +30,7 @@ Post.init(
         model: 'user',
         key: 'id'
       }
-    }
+    },
   },
   {
     sequelize,

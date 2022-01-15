@@ -75,11 +75,12 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', passAuth, (req, res) => {
-  // expects {title: 'Find out about tech news here!', post_url: 'https://www.google.com', user_id: 1}
+  // expects {"title": 'Find out about tech news here!', "post_text": "example text here", "user_id": 1}
   if (req.session) {
     Post.create({
+      post_id: req.body.post_id,
       title: req.body.title,
-      post_url: req.body.post_url,
+      post_text: req.body.post_text,
       user_id: req.session.user_id
     })
       .then(dbPostData => res.json(dbPostData))

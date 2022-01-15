@@ -2,13 +2,14 @@ async function addPostHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="post-title"]').value;
-    const post_url = document.querySelector('input[name="post-url"]').value;
+    const  newPost_text = document.querySelector('textarea[name="newPost-text"]').value.trim();
+
   
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
         title,
-        post_url
+        newPost_text
       }),
       headers: {
         'Content-Type': 'application/json'
