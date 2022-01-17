@@ -42,6 +42,12 @@ router.get('/', passAuth, (req, res) => {
     });
 });
 
+router.get('/new-post', (req, res) => {
+  if (req.session.loggedIn) {
+  res.render('new-post');
+  }
+});
+
 router.get('/edit/:id', passAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
@@ -81,5 +87,6 @@ router.get('/edit/:id', passAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
+
 
 module.exports = router;
