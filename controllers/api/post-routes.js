@@ -80,7 +80,7 @@ router.post('/', passAuth, (req, res) => {
     Post.create({
       post_id: req.body.post_id,
       title: req.body.title,
-      post_text: req.body.post_text,
+      post_text: req.body.newPost_text,
       user_id: req.session.user_id
     })
       .then(dbPostData => res.json(dbPostData))
