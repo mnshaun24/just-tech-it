@@ -11,25 +11,27 @@
 <body>
   <header>
     <h1>Just Tech It Blog</h1>
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        {{#if loggedIn}}
-        <a href="/dashboard">Dashboard</a>
-        {{else}}
-        <a href="/login">Dashboard</a>
-        {{/if}}
-      </li>
-      <li>
-        {{#if loggedIn}}
-        <a href="/logout">logout</a>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </li>
-    </ul>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
+          {{else}}
+          <a href="/login">Dashboard</a>
+          {{/if}}
+        </li>
+        <li>
+          {{#if loggedIn}}
+          <a href="/logout">logout</a>
+          {{else}}
+          <a href="/login">login</a>
+          {{/if}}
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
