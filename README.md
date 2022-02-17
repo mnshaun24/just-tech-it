@@ -13,7 +13,7 @@ To practice SQL and MySQL applications along with build an accompanying front en
 * MySQL
 
 ## Notes
-I was able to upload to Heroku but had problems getting the live app to work. I had to work with my tutor to resolve the issue, hence the late timing of the submission.
+I was able to upload to Heroku but had problems getting the live app to work. I had to work with my tutor to resolve the issue, hence the second of the submission.
 
 ## Live app link
 https://dashboard.heroku.com/apps/hidden-brushlands-94802
