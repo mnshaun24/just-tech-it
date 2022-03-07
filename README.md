@@ -1,10 +1,10 @@
 ## Shaun's Tech Blog
 
-## Assignment
-This tech blog fulfills the requirements for the week 14 challenge. The assignment is to build a working tech blog using SQL to store posts, comments, login and other functionality.  
+## About
+This blog incorporates a MySQL database. SQL is used to communicate with the database. The back-end is built with Node.js.   
 
 ## Purpose
-To practice SQL and MySQL applications along with build an accompanying front end.
+To practice SQL and MySQL applications along with building an accompanying front end that users can take several different actions to store and recall information from the database.
 
 ## Built With
 * Node
@@ -12,11 +12,8 @@ To practice SQL and MySQL applications along with build an accompanying front en
 * SQL
 * MySQL
 
-## Notes
-I was able to upload to Heroku but had problems getting the live app to work. I had to work with my tutor to resolve the issue, hence the second of the submission.
-
 ## Live app link
-https://dashboard.heroku.com/apps/hidden-brushlands-94802
+https://just-tech-it.herokuapp.com/
 
 ## Contribution
 Shaun Sticka
